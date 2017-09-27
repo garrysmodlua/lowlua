@@ -78,7 +78,7 @@ static const std::vector<luaL_Reg> lowlua_lib = {
 
 #pragma region Call functions
 	{ "lua_call", proto_lua_call },
-	{ "lua_pcall", proto_lua_pcall },
+	{ "lua_pcall", proto_lua_pcall }
 #pragma endregion
 
 	//{ nullptr, nullptr } // NOTE: Do not add the trailing null! A workaround has been introduced since "luaL_register" function does not work as expected - redesigned (adding a trailing null would crash)... Thanks to Garry for screwing it.
